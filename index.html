@@ -1,72 +1,962 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standphill India</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
-</head>
-<body>
+<?php 
 
-  <!-- Top Info Bar -->
-  <div class="top-bar">
-    <div class="top-left">Welcome to Standphill India</div>
-    <div class="top-right">
-      <span>📞 +91-96676 74225 | ✉ info@standphillindia.in | 📍 Delhi, India</span>
-    </div>
-  </div>
+$title = "Best BIS Certification Consultants | ISI Mark, FMCS, CRS Certificate in India";
+$description = "Get expert BIS Certification consulting for ISI Mark, FMCS, CRS Certificate in India. Trusted guidance for compliance and quality standards.";
+$keywords = "BIS certification consultants, ISI mark certification, FMCS certification, CRS certificate, BIS consultants in India, BIS certification services, BIS approval India, ISI mark consultants, FMCS consultants India, CRS registration India, BIS experts, certification services India.";
+$canonical = "https://www.standphillindia.in";
 
-  <!-- Main Header -->
-  <header class="main-header">
-    <img src="images/Induce.png" alt="Standphill Logo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+include('header.php'); ?>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="images/banner1.jpg" alt="Banner Image">
-    <div class="hero-text">
-      <h1>Welcome to Standphill India</h1>
-      <p>Creative Design & Branding Company</p>
-    </div>
-  </section>
+<style>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a creative branding agency delivering design excellence...</p>
-  </section>
+/* Carousel Styles */
+.carousel-indicators .active {
+    background-color: #2980b9;
+}
 
-  <!-- Services -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-boxes">
-      <div class="box">
-        <img src="images/isi-logo.png" alt="Service 1">
-        <h3>Graphic Design</h3>
-      </div>
-    </div>
-  </section>
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+    opacity: 0.5;
+}
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@standphillindia.in</p>
-    <p>Phone: +91 96676 74225</p>
-  </section>
+.carousel-control {
+    width: 0;
+}
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Standphill India. All rights reserved.</p>
-  </footer>
+.carousel-control.left,
+.carousel-control.right {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background-image: none;
+	background-repeat: no-repeat;
+	text-shadow: none;
+}
 
-</body>
-</html>
+.carousel-control.left span {
+	padding: 15px;
+}
+
+.carousel-control.right span {
+	padding: 15px;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+	position: absolute;
+	top: 45%;
+	z-index: 5;
+	display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+	left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+	right: 0;
+}
+
+.carousel-control.left span,
+.carousel-control.right span {
+	background-color: #000;
+}
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+	opacity: .7;
+	filter: alpha(opacity=70);
+}
+
+/* Carousel Header Styles */
+.header-text {
+    position: absolute;
+    top: 3%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.header-text h2 {
+    font-size: 40px; 
+}
+
+.header-text h2 span {
+    background-color: #081e2d;
+    color: #fe4a26;
+    padding: 10px;
+}
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    padding: 11px;
+    background-color: #fe4a26;
+    border: 2px solid #fe4a26;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+.btn-themetwo {
+    color: #000;
+    padding: 11px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.btn-themetwo:hover {
+    color: #000;
+    background-color: #fe4a26;
+    border-color: #fe4a26;
+    margin-right: 15px;
+    font-size: 18px;
+}
+</style>
+
+            <div class="container-fluid">
+            	<div class="row">
+            		<!-- Carousel -->
+                	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            			<!-- Indicators -->
+            			<!--<ol class="carousel-indicators">-->
+            			<!--  	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+            			    <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+            			<!--    <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+            			<!--</ol>-->
+            			<!-- Wrapper for slides -->
+            			<div class="carousel-inner">
+            			    <div class="item active" style="background-color: #000000;">
+            			    	<img src="assets/banner/bannerone.webp" alt="First slide" fetchpriority="high" width="1521" height="460" > 
+                                <!-- Static Header -->
+                                <div class="header-text hidden-xs">
+                                    <div class="col-md-8" style="padding-top: 8%;">
+                                        <h1>
+                                        	<span>Welcome to <strong>Standphill India</strong></span>
+                                        </h1>
+                                        <br>
+                                        <h3 style="color: white;">
+                                        	<span style="color: white;">Best Consulting Company in Delhi </span>
+                                        </h3>
+                                        <br>
+                                        <div class="">
+                                            <a class="btn btn-theme btn-sm btn-min-block" href="contact.php">Contact Us</a><a class="btn btn-themetwo btn-sm btn-min-block" href="tel:+918527930453">Call Us</a></div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            							<?php include('form.php'); ?>
+            						</div>
+                                </div><!-- /header-text -->
+            			    </div>
+            			    
+            			    <!--<div class="item">-->
+            			    <!--	<img src="assets/banner/1.png" alt="CRS Certification India"fetchpriority="high"  style="opacity: 1;">-->
+            			    <!--</div>-->
+            			</div>
+            		</div><!-- /carousel -->
+            	</div>
+            </div>
+
+
+            <div class="welcome_section">
+            	<div class="container">
+            		<div class="row">
+            			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+            				<div class="theme_title">
+            					<h2>Welcome to Standphill <span>India</span></h2>
+            				</div>
+            				<p style="margin: 32px 0 22px 0;"><b>Standphill India</b>, your <a href="https://www.standphillindia.in/bis-isi-mark-certification-for-foregin-manufacturers-in-delhi-india"><b style="color: red;">best consulting service providing company in Delhi</b></a>. With over <b>20 years of experience in BIS registration</b>, we are your trusted partner in ensuring your products meet the highest standards of quality and safety. Located in <b>Laxmi Nagar, Delhi</b>, our <a href="https://www.standphillindia.in/bis-isi-mark-certification-for-foregin-manufacturers-in-delhi-india"><b style="color: red;">BIS registered company</b></a> has successfully served more than 400 clients worldwide, helping them navigate the complexities of BIS certification with ease.</p>
+            				<p>As a <a href="https://www.standphillindia.in/bis-isi-mark-certification-for-foregin-manufacturers-in-delhi-india"><b style="color: red;">top consulting service providing company in Delhi, standphill India</b></a> offers comprehensive solutions tailored to your BIS registration needs. From meticulous documentation and application submission to expert guidance through product testing and certification, our team of experienced professionals ensures that your products meet the highest standards of quality and compliance. </p>
+            			</div>
+            			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            				<div class="video-box wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+            					<img src="images/home/1.webp" alt="image" class="tran7s" width="570" height="300">
+            					<!--<a href="https://www.youtube.com/embed/17q6bsEuUkM?autoplay=1" class="fancy_video fancybox.iframe tran3s"><div><span><i class="fa fa-play" aria-hidden="true"></i></span></div></a>-->
+            				</div>
+            			</div>
+            		</div>
+            	</div> <!-- End of .container -->
+            </div>
+
+
+			<!-- OUR ACHIEVEMENTS ****************************** -->
+			<div class="our_service">
+				<div class="container">
+					<div class="theme_title">
+						<h2>OUR ACHIEVEMENTS</h2>
+					</div>
+				<div class="why_choose_us">
+				<div class="overlay">
+					<div class="container">
+						<img src="images/home/man.webp" alt="BIS Consultants India" width="670" height="599" >
+						<div class="row">
+							<!-- ______________ Item _____________ -->
+							<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+								<div class="choose_us_item tran3s clear_fix wow fadeInLeft">
+									<div class="icon pull-left"><span class="ficon flaticon-hexagon"></span></div> <!-- End of .icon -->
+									<div class="text pull-left">
+										<h5 class="tran3s">20 Years of Expertise</h5>
+										<p class="tran3s">Celebrating two decades of providing top-notch consulting services, specializing in BIS registration.</p>
+									</div> <!-- End of .text -->
+									<div class="clear_fix"></div>
+								</div> <!-- End of .choose_us_item -->
+
+								<div class="choose_us_item tran3s clear_fix wow fadeInLeft">
+									<div class="icon pull-left"><span class="ficon flaticon-twopeople"></span></div> <!-- End of .icon -->
+									<div class="text pull-left">
+										<h5 class="tran3s">Global Reach</h5>
+										<p class="tran3s">Successfully assisted over 400 clients worldwide in achieving BIS certification, reflecting our broad international experience.</p>
+									</div> <!-- End of .text -->
+									<div class="clear_fix"></div>
+								</div> <!-- End of .choose_us_item -->
+
+								<div class="choose_us_item tran3s clear_fix wow fadeInLeft">
+									<div class="icon pull-left"><span class="ficon flaticon-user"></span></div> <!-- End of .icon -->
+									<div class="text pull-left">
+										<h5 class="tran3s">Diverse Industry Experience: </h5>
+										<p class="tran3s">Extensive experience working across various industries, including manufacturing, electronics, and consumer goods, ensuring tailored solutions for diverse needs.</p>
+									</div> <!-- End of .text -->
+									<div class="clear_fix"></div>
+								</div> <!-- End of .choose_us_item -->
+							</div> <!-- End of .col -->
+
+							<!-- ______________ Item _____________ -->
+							<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+								<div class="choose_us_item tran3s clear_fix wow fadeInRight">
+									<div class="icon pull-left"><span class="ficon flaticon-web"></span></div> <!-- End of .icon -->
+									<div class="text pull-left">
+										<h5 class="tran3s">High Success Rate</h5>
+										<p class="tran3s">Consistently high success rate in obtaining BIS certification, showcasing our efficiency and reliability in handling complex registration processes.</p>
+									</div> <!-- End of .text -->
+									<div class="clear_fix"></div>
+								</div> <!-- End of .choose_us_item -->
+
+								<div class="choose_us_item tran3s clear_fix wow fadeInRight">
+									<div class="icon pull-left"><span class="ficon flaticon-people"></span></div> <!-- End of .icon -->
+									<div class="text pull-left">
+										<h5 class="tran3s">Trusted Partner</h5>
+										<p class="tran3s">Recognized as a leading consulting service providing company in Delhi, known for our commitment to quality and customer satisfaction.</p>
+									</div> <!-- End of .text -->
+									<div class="clear_fix"></div>
+								</div> <!-- End of .choose_us_item -->
+
+								<div class="choose_us_item tran3s clear_fix wow fadeInRight">
+									<div class="icon pull-left"><span class="ficon flaticon-telephone"></span></div> <!-- End of .icon -->
+									<div class="text pull-left">
+										<h5 class="tran3s">Comprehensive Support</h5>
+										<p class="tran3s">Delivered end-to-end support from initial consultation to final certification, ensuring a smooth and hassle-free experience for our clients. </p>
+									</div> <!-- End of .text -->
+									<div class="clear_fix"></div>
+								</div> <!-- End of .choose_us_item -->
+
+							</div> <!-- End of .col -->
+						</div>
+					</div> <!-- End of .container -->
+				</div> <!-- End of .overlay -->
+			</div> <!-- End of .why_choose_us -->
+	
+					
+					<div class="wow fadeInUp">
+        	        	<div class="container">
+        	        		<div class="row">
+        						<div id="partner_logotwo" class="owl-carousel owl-theme">
+        						    <?php $sanapiyalovervif = "SELECT * FROM table_achiev";  $asifvif = mysqli_query($conn,$sanapiyalovervif);  while($aribavif = mysqli_fetch_array($asifvif)){ ?>
+        							<div class="item"><img src="admin/img/<?php echo $aribavif['image']; ?>" loading="lazy" alt="certificate" width="210" height="148"></div>
+        							<?php } ?>
+        						</div> <!-- End .partner_logo -->
+        					</div>
+        				</div>
+        			</div>
+					
+					
+				</div>
+			</div> <!-- End of OUR ACHIEVEMENTS -->
+			
+			
+			
+
+
+			<!-- Request Quote ******************************* -->
+			<div class="request_quote">
+				<div class="overlay">
+					<div class="container">
+						<p class="pull-left">Over 20 years of experience we’ll ensure you always get the best guidance.</p>
+						<a href="#" class="color1_bg pull-right tran3s">Request quote</a>
+					</div> <!-- End of .container -->
+				</div>
+			</div> <!-- End of .request_quote -->
+
+
+
+			<!-- Service Grid Page*********************** -->
+	        <div class="our_service service_grid">
+	        	<div class="container">
+	        		<h2 style="text-align: center; pb-40px">OUR SERVICES</h2>
+					<br><br>
+					<br><br>
+					<div class="row">
+						<div class="service-tabTwo wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+									<ul class="nav nav-pills">
+									    <li class="active"><a data-toggle="pill" href="#tab1"><i class="fa fa-globe"></i> LICENCE/ CERTIFICATION</a></li>
+									    <li class=""><a data-toggle="pill" href="#tab2"><i class="fa fa-registered"></i> REGISTRATION</a></li>
+									    <li class=""><a data-toggle="pill" href="#tab3"><i class="fa fa fa-th"></i> AUXILIARY</a></li>
+								  	</ul>
+								  
+									 <div class="tab-content">
+									    <div id="tab1" class="tab-pane fade active in">
+<style type="text/css">
+	.fifo60{
+		width: 100%;
+		height: auto;
+	}
+	.fifo61{
+		width: 20%;
+		height: auto;
+		float: left;
+	}
+	.fifo62{
+		box-shadow: 2px 3px 8px 4px #b5b5b5;
+		margin-bottom: 10px;
+	}
+	.fifo63{
+		margin-left: 18px;
+		margin-bottom: 20px;
+	}
+	@media only screen and (max-width: 700px){
+	   .fifo61{
+    		width: 30%;
+    		height: auto;
+    		float: left;
+    		margin-left: 11px;
+    	}
+    	.fifo62 {
+            box-shadow: 2px 3px 8px 4px #b5b5b5;
+            margin-bottom: 10px;
+            margin-left: -10px;
+        }
+        .fifo63 {
+            margin-left: -12px;
+            margin-bottom: 20px;
+        }
+        .service-tabTwo .nav-pills li a {
+            padding: 0;
+            font-size: 18px;
+            color: #272727;
+             width: 100%; 
+            line-height: 46px;
+            border-radius: 0;
+            text-align: center;
+            border: 1px solid #cdcdcd;
+            border-bottom: none;
+            position: relative;
+            margin-right: 2px;
+            font-family: 'Montserrat-SemiBold';
+            font-size: 18px;
+        }
+        .our_team .team_member {
+            margin-top: 60px;
+            text-align: center;
+        }
+	} 
+</style>									      
+									      <div class="fifo60">
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/1.webp" alt="images" width="150" height="150">
+									      		<a href="bis-isi-mark-certification-for-foregin-manufacturers-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/2.webp" alt="images" width="150" height="150">
+									      		<a href="bis-isi-mark-certification-for-domestic-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/3.webp" alt="images" width="150" height="150">
+									      		<a href="bis-hallmarking-certification-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/4.webp" alt="images" width="150" height="150">
+									      		<a href="#" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/5.webp" alt="images" width="150" height="150">
+									      		<a href="bis-tac-licence-for-automobiles-registration-for-toys-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/6.webp" alt="images" width="150" height="150">
+									      		<a href="#" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/7.webp" alt="images" width="150" height="150">
+									      		<a href="eco-mark-certification-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/8.webp" alt="images" width="150" height="150">
+									      		<a href="#" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/9.webp" alt="images" width="150" height="150">
+									      		<a href="#" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/10.webp" alt="images" width="150" height="150">
+									      		<a href="drug-licence-registration-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      </div>
+
+									     
+									      
+									    </div> <!-- End of #tab1 -->
+
+									    <div id="tab2" class="tab-pane fade">
+									      
+									      	<div class="fifo60">
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/1.webp" alt="images" width="150" height="150" >
+									      		<a href="bis-crs-certification-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/2.webp" alt="images" width="150" height="150" >
+									      		<a href="wpc-eta-certification-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/3.webp" alt="images" width="150" height="150" >
+									      		<a href="bee-certification-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/4.webp" alt="images" width="150" height="150" >
+									      		<a href="e-waste-epr-management-system-registration-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/5.webp" alt="images" width="150" height="150" >
+									      		<a href="ul-certification-registration-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/6.webp" alt="images" width="150" height="150" >
+									      		<a href="#" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/7.webp" alt="images" width="150" height="150" >
+									      		<a href="#" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/8.webp" alt="images" width="150" height="150" >
+									      		<a href="ce-certification-registration-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/register/9.webp" alt="images" width="150" height="150" >
+									      		<a href="ce-certification-registration-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      </div>
+									      	
+									    </div> <!-- End of #tab2 -->
+
+									    <div id="tab3" class="tab-pane fade">
+									      
+									      <div class="fifo60">
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/1.webp" alt="images" width="150" height="150" >
+									      		<a href="fssai-certificate-registration-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/2.webp" alt="images" width="150" height="150" >
+									      		<a href="brand-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/3.webp" alt="images" width="150" height="150" >
+									      		<a href="make-in-india-consultants-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/4.webp" alt="images" width="150" height="150" >
+									      		<a href="iso-certificate-registration-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/5.webp" alt="images" width="150" height="150" >
+									      		<a href="standardization.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/6.webp" alt="images" width="150" height="150" >
+									      		<a href="#" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/7.webp" alt="images" width="150" height="150" >
+									      		<a href="import-export-licence-registration-consultants-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/8.webp" alt="images" width="150" height="150" >
+									      		<a href="trademark-registration-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/9.webp" alt="images" width="150" height="150" >
+									      		<a href="msme-ssi-nsic.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      	<div class="fifo61">
+									      		<img class="fifo62" src="images/servicesown/auxi/10.webp" alt="images" width="150" height="150" >
+									      		<a href="laboratory-setup-service-in-delhi-india.php" class="btn btn-info fifo63">View Details</a>
+									      	</div>
+									      </div>
+									      
+									    </div> <!-- End of #tab3 -->
+									 </div> <!-- End of .tab-content -->
+								</div>	
+					</div>
+	        	</div>
+	        </div> <!-- End of .our_service -->
+
+
+	        <!-- OUR ACHIEVEMENTS ****************************** -->
+			<div class="our_service pb-40px">
+				<div class="container">
+					<div class="theme_title">
+						<h2>OUR VIDEOS</h2>
+					</div>
+					<div class="row">
+						<div class="service_slider owl-carousel owl-theme">
+                            <?php $sanapiyalovervifo = "SELECT * FROM tbl_service";  $asifvifo = mysqli_query($conn,$sanapiyalovervifo);  while($aribavifo = mysqli_fetch_array($asifvifo)){ ?>
+							<div class="item">
+								<div class="img_holder">
+									<a target="_blank" href="https://www.youtube.com/watch?v=<?php echo $aribavifo['clientvideolink']; ?>"><img src="assets/uploads/<?php echo $aribavifo['photo']; ?>" alt="images" width="370" height="208"></a>
+								</div>
+							</div>
+							<?php } ?>
+						</div> <!-- End of .service_slider -->
+					</div>
+				</div>
+			</div> <!-- End of OUR ACHIEVEMENTS -->
+
+		
+
+			<!-- OUR ACHIEVEMENTS ****************************** -->
+			<!--<div class="our_service">-->
+			<!--	<div class="container">-->
+			<!--		<h2 style="text-align: center;">AUDITS & PARTICIPATION<span>.</span></h2>-->
+			<!--		<div class="row">-->
+			<!--			<div class="service_slider owl-carousel owl-theme">-->
+							
+			<!--				<div class="item">-->
+			<!--					<div class="img_holder">-->
+			<!--						<img src="images/home/3.webp" alt="images">-->
+			<!--					</div>-->
+			<!--				</div>-->
+			<!--				<div class="item">-->
+			<!--					<div class="img_holder">-->
+			<!--						<img src="images/home/3.webp" alt="images">-->
+			<!--					</div>-->
+			<!--				</div>-->
+			<!--				<div class="item">-->
+			<!--					<div class="img_holder">-->
+			<!--						<img src="images/home/3.webp" alt="images">-->
+			<!--					</div>-->
+			<!--				</div>-->
+			<!--				<div class="item">-->
+			<!--					<div class="img_holder">-->
+			<!--						<img src="images/home/3.webp" alt="images">-->
+			<!--					</div>-->
+			<!--				</div>-->
+			<!--				<div class="item">-->
+			<!--					<div class="img_holder">-->
+			<!--						<img src="images/home/3.webp" alt="images">-->
+			<!--					</div>-->
+			<!--				</div>-->
+			<!--				<div class="item">-->
+			<!--					<div class="img_holder">-->
+			<!--						<img src="images/home/3.webp" alt="images">-->
+			<!--					</div>-->
+			<!--				</div>-->
+
+			<!--			</div>-->
+			<!--		</div>-->
+			<!--	</div>-->
+			<!--</div> -->
+			
+			<!-- End of OUR ACHIEVEMENTS -->
+
+
+			<!-- Why Choose Us******************************* -->
+			
+
+
+
+			<!-- Testimonial****************************** -->
+			<div class="testimonial">
+				<div class="container">
+					<div class="theme_title " style="margin-top:50px;">
+						<h2>Testimonials</h2>
+					</div>
+					<div class="row">
+						<div class="testimonial-slider">
+							<div class="item">
+								<div class="text">
+									<span class="ficon flaticon-quotes"></span>
+									<p>I worked with Standphill India for our BIS registration, and they made the whole process so easy. Their team was very knowledgeable and they helped us every step of the way. I’m happy with their service and If You Are Looking For BIS certification then standphill india is the best bis certification consultants for any type of bis certification.</p>
+								</div>
+								<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+								<div class="author">
+									<img src="images/clientsimages/sudeep-nutrition-p-ltd.jpg" alt="image">
+									<h5>Chintan Shah (AGM)</h5>
+									<h6 style="padding-top: 10px;">Sudeep Nutrition P.Ltd</h6>
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="text">
+									<span class="ficon flaticon-quotes"></span>
+									<p>Standphill India helped us get the ISI Mark Certification for our product, and it was a great experience. Their team gave us clear instructions and supported us throughout the entire application process. They are professional, knowledgeable, and made sure we met all the required standards. We’re happy with their service and trust them for future certifications.</p>
+								</div>
+								<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+								<div class="author">
+									<img src="images/clientsimages/arisudana-industries-limited.jpg" alt="image">
+									<h5>Sagar Malhotra (CA)</h5>
+									<h6 style="padding-top: 10px;">Arisudana Industries Limited</h6>
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="text">
+									<span class="ficon flaticon-quotes"></span>
+									<p>We are The manufacturer of Resilient Vinyl Flooringand Synthetic Leather, we required BIS certification. Standphill India provided exceptional support throughout the process. Their team handled everything, from documentation to lab testing. The entire certification process was smooth and stress-free. Thanks to Standphill India For their support.</p>
+								</div>
+								<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+								<div class="author">
+									<img src="images/clientsimages/riltd.jpg" alt="image">
+									<h5>Vishal Shinde (Vice President)</h5>
+									<h6 style="padding-top: 10px;">Responsive Industries Limited</h6>
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="text">
+									<span class="ficon flaticon-quotes"></span>
+									<p>As a baby care brand, ensuring the safety and quality of our products is our top priority. Standphill India helped us navigate the BIS certification process seamlessly. Their team provided expert advice, managed all the paperwork, and ensured compliance with the required standards. Thanks to Standphill india for their efficient and professional services.</p>
+								</div>
+								<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+								<div class="author">
+									<img src="images/clientsimages/baby-forest-ayurveda-private-limited.webp" alt="image">
+									<h5>Apoorva Pandey (CMO)</h5>
+									<h6 style="padding-top: 10px;">Baby Forest Ayurveda Private Limited</h6>
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item">
+								<div class="text">
+									<span class="ficon flaticon-quotes"></span>
+									<p>As a plastic products manufacturer, obtaining BIS certification was crucial for our business. Standphill India provided exceptional support throughout the process, handling documentation, lab testing, and compliance with ease. Their knowledgeable team ensured a hassle-free certification journey. We highly recommend their professional services.</p>
+								</div>
+								<span class="arrow"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+								<div class="author">
+									<img src="images/clientsimages/tppl.jpg" alt="image">
+									<h5>Dr. Nisha Sarda (Director)</h5>
+									<h6 style="padding-top: 10px;">Tulsiratan Plastic Private Limited</h6>
+									<ul>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div> <!-- End of .testimonial-slider -->
+					</div> <!-- End of .row -->
+				</div> <!-- End of .container -->
+			</div> <!-- End of .testimonial -->
+
+
+
+			<!-- Our Team **************************** -->
+			<div class="our_team">
+				<div class="overlay">
+					<div class="container">
+						<div class="theme_title_center">
+							<h2>Our Team</h2>
+							<span></span>
+						</div> 
+
+						<div class="row">
+    						 <div class="service_slider owl-carousel owl-theme">
+						        <?php $sanapiyalover = "SELECT * FROM tbl_slider";  $asif = mysqli_query($conn,$sanapiyalover);  while($ariba = mysqli_fetch_array($asif)){ ?>
+    								<div class="item">
+    									<div class="img_holder">
+    										<img src="assets/uploads/<?php echo $ariba['photo']; ?>" alt="images" width="370" height="220">
+    									</div>
+    									<div class="text-center">
+											<h4 style="color:#fff;padding-top:10px;"><?php echo $ariba['heading']; ?></h4>
+											<h6 style="color:#fff;padding-top:10px;"><?php echo $ariba['button_text']; ?></h6>
+    									</div> <!-- End of .text -->
+    								</div> <!-- End of .item -->
+                                <?php } ?>
+    						</div> <!-- End of .service_slider -->
+						</div> <!-- End of .row -->
+					</div> <!-- End of .container -->
+				</div> <!-- End of .overlay -->
+			</div> <!-- End of .our_team -->
+
+
+
+			<!-- FAQ******************************* -->
+			<div class="faq">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 faq_left_area wow fadeInLeft">
+							<div class="theme_title">
+								<h2>FAQ’s</h2>
+							</div>
+							<span>Get expert BIS Certification consulting for ISI Mark, FMCS, CRS Certificate in India. Trusted guidance for compliance and quality standards.</span>
+							<div class="row">
+								<div class="col-lg-6 col-md-4 col-sm-6">
+									<div class="video-box">
+										<img src="images/home/15.webp" alt="image" class="tran7s" width="270" height="225">
+										<a href="https://www.youtube.com/embed/eAaP03Qs6cE?autoplay=1" class="fancy_video fancybox.iframe tran3s"><div><span><i class="fa fa-play" aria-hidden="true"></i></span></div></a>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-8 col-sm-6 video_text">
+									<p>We are a dynamic consulting company located in India. We specialize in expert BIS Certification consulting for ISI Mark, FMCS, and CRS Certificates. Trusted for our guidance in compliance and quality standards, we bring innovation to every project we handle.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight">
+							<div class="faq_panel">
+								<div class="panel-group theme-accordion" id="accordion">
+								  <div class="panel">
+								    <div class="panel-heading active-panel">
+								      <h6 class="panel-title">
+								      	<span class="icon tran3s"></span>
+								        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+								       What is BIS certification, and why is it important for my business?</a>
+								      </h6>
+								    </div>
+								    <div id="collapse1" class="panel-collapse collapse in">
+								      <div class="panel-body">
+								      	<p><a href="https://www.standphillindia.in/bis-isi-mark-certification-for-foregin-manufacturers-in-delhi-india"><b style="color: red;">BIS certification</b></a>, provided by the Bureau of Indian Standards (BIS), is a quality certification mark that signifies that a product meets the standards set by the BIS. For businesses, obtaining BIS certification is crucial as it ensures that their products adhere to stringent quality and safety standards, enhancing product reliability and consumer trust.</p>
+								      	<p>At <a href="https://www.standphillindia.in/bis-isi-mark-certification-for-domestic-in-delhi-india.php"><b style="color: red;">Standphill India</b></a>, a <a href="https://www.standphillindia.in/bis-isi-mark-certification-for-domestic-in-delhi-india"><b style="color: red;">Best consulting company in Delhi</b></a>, we specialize in guiding businesses through the BIS certification process. Our team helps in understanding the requirements, preparing necessary documentation, coordinating product testing, and managing the application process. With over 20 years of experience and a track record of serving more than 400 clients worldwide, we ensure that your products achieve BIS certification efficiently and effectively.</p>
+								      </div>
+								    </div>
+								  </div> <!-- /panel 1 -->
+								  <div class="panel">
+								    <div class="panel-heading">
+								      <h6 class="panel-title">
+								      	<span class="icon tran3s"></span>
+								        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+								         How can Standphill India assist with the BIS certification process?</a>
+								      </h6>
+								    </div>
+								    <div id="collapse2" class="panel-collapse collapse">
+								      <div class="panel-body">
+								      	<p>As a <a href="https://www.standphillindia.in/bis-isi-mark-certification-for-domestic-in-delhi-india"><b style="color: red;">Top consulting company in Delhi</b></a>, Standphill India offers comprehensive support throughout the BIS certification process. Our services include:</p>
+								      	<ul>
+								      	    <li><p><b>Initial Consultation:</b> We begin with a detailed assessment of your product and business needs, providing guidance on the BIS certification requirements.</p></li>
+								      	    <li><p><b>Documentation Preparation:</b>Our experts assist in gathering and preparing all necessary documents to ensure they meet BIS standards.</p></li>
+								      	    <li><p><b>Product Testing Coordination:</b>We coordinate with BIS-approved laboratories for product testing, ensuring compliance with all testing requirements.</p></li>
+								      	    <li><p><b>Application Submission: </b>: We handle the submission of your application, ensuring accuracy and timely processing.</p></li>
+								      	     <li><p><b>Follow-up Support:  </b>Our team provides ongoing support to address any queries from BIS and resolve any issues that may arise.</p></li>
+								      	</ul>
+								      	<p>Standphill India’s extensive experience and dedicated approach make us a trusted partner for achieving BIS certification with ease.</p>
+								      </div>
+								    </div>
+								  </div> <!-- /panel 2 -->
+								  <div class="panel">
+								    <div class="panel-heading">
+								      <h6 class="panel-title">
+								      	<span class="icon tran3s"></span>
+								        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+								        What are the benefits of choosing Standphill India for BIS registration services?</a>
+								      </h6>
+								    </div>
+								    <div id="collapse3" class="panel-collapse collapse">
+								      <div class="panel-body">
+								      	<p>Choosing Standphill India, a top consulting company in Delhi, offers numerous benefits:</p>
+								      	<ul>
+								      	    <li><p><b>Expert Guidance:</b>:With over 20 years of experience, we have a deep understanding of the BIS regulatory landscape and can provide expert advice tailored to your specific needs.</p></li>
+								      	    <li><p><b>Comprehensive Services: </b>From initial consultation to final certification, we offer a full range of BIS registration services, ensuring a smooth and efficient process.</p></li>
+								      	    <li><p><b>Global Experience: </b>Serving more than 400 clients worldwide, our extensive experience across various industries ensures that we can handle diverse certification requirements effectively.</p></li>
+								      	    <li><p><b>Client-Centric Approach: </b>: We prioritize client satisfaction, offering personalized support and proactive communication throughout the certification process.</p></li>
+								      	    <p>Our proven track record and commitment to quality make us an ideal choice for businesses seeking BIS certification.</p>
+								      	</ul>
+								      </div>
+								    </div>
+								  </div> <!-- /panel 3 -->
+
+								  <div class="panel">
+								    <div class="panel-heading">
+								      <h6 class="panel-title">
+								      	<span class="icon tran3s"></span>
+								        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+								       How long does the BIS certification process take, and how can Standphill India help expedite it?</a>
+								      </h6>
+								    </div>
+								    <div id="collapse4" class="panel-collapse collapse">
+								      <div class="panel-body">
+								      	<p>The BIS certification process duration can vary depending on the product and the complexity of the requirements. Typically, it involves several stages, including documentation, product testing, and application submission. At Standphill India, a <a href="https://www.standphillindia.in/bis-isi-mark-certification-for-domestic-in-delhi-india"><b style="color: red;">Best consulting company in Delhi</b></a>, we strive to expedite the process through:</p>
+								      	<ul>
+								      	 <li><p><b>Efficient Documentation: </b> We ensure that all required documents are accurately prepared and submitted, reducing potential delays.</p></li>
+								      	 <li><p><b>Timely Coordination:  </b> By coordinating effectively with BIS-approved laboratories and managing application submissions promptly, we help minimize waiting times.</p></li>
+								      	  <li><p><b>Ongoing Support:</b>Our team provides continuous support to address any issues or queries from BIS, ensuring a smooth and timely certification process.</p></li>
+								      	</ul>
+								      </div>
+								    </div>
+								  </div> <!-- /panel 4 -->
+								</div> <!-- end #accordion -->
+							</div> <!-- End of .faq_panel -->
+						</div>
+					</div> <!-- End of .row -->
+				</div> <!-- End of .container -->
+			</div> <!-- End of .faq -->
+
+
+
+			<!-- Partner Logo********************** -->
+
+	        <div class="partners wow fadeInUp">
+	        	<div class="container">
+	        	<h2 class="pb-40px">OUR CLIENTS</h2>
+	        		<div class="row">
+						<div id="partner_logo" class="owl-carousel owl-theme">
+						    <?php $sanapiyaloverkfi = "SELECT * FROM tabl_portfolio";  $asifkfi = mysqli_query($conn,$sanapiyaloverkfi);  while($aribakfi = mysqli_fetch_array($asifkfi)){ ?>
+							<div class="item"><img src="assets/uploads/<?php echo $aribakfi['photo']; ?>" alt="logo" width="210" height="118"> </div>
+							<?php } ?>
+						</div> <!-- End .partner_logo -->
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="modal fade" id="mainpopup" tabindex="-1" role="dialog" aria-labelledby="mainpopupLabel" aria-hidden="true"  data-close="10" data-open="2" data-href="https://www.anitur.com.tr/popup/test-6-text">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="memberModalLabel">Send Message</h4>
+              </div>
+              <div class="modal-body">
+                    <div class="send_message contact_us_form" style="background-color: #ffffff;padding: 0px;">	
+								<form action="enq.php" method="POST" style="margin-top: 0px;">
+
+									<div class="row">
+                            			<div class="col-lg-12 col-md-12">
+                            				<input type="text" placeholder="Your Name *" name="name" required>
+                            			</div>
+                            			<div class="col-lg-12 col-md-12">
+                            				<input type="email" placeholder="Your Mail *" name="email" required>
+                            			</div>
+                            			<div class="col-lg-12 col-md-12">
+                            				<input type="tel" placeholder="Phone Number *" name="phone" pattern="[789][0-9]{9}" required>
+                            			</div>
+                            		</div>
+									<?php 
+                                    $ip = getenv("REMOTE_ADDR");
+                         
+                                    $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip)); 
+                                       
+                                    ?> 
+                        			
+                        			<input name="city" type="hidden" required class="form-control int-value" value="<?php echo $ipdat->geoplugin_city; ?>">
+                        			
+                        			<?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; $lover = explode('/',$actual_link);?>
+                        			<input name="actual_link" type="hidden" class="form-control int-value" value="<?php echo $actual_link; ?>" readonly>
+                        			<input name="subject" type="hidden" class="form-control int-value" value="<?php echo $lover['3']; ?>" readonly>
+									<input name="submit" type="submit" value="Request For Call" class="color1_bg tran3s" style="background-color: #fe4d29;color:#fff;font-weight:600;" >
+								</form>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Standphill India",
+        "image": "https://standphill.in/images/logo/logo.png",
+        "description": "‘standphill India’ is world’s most leading consulting firms, reliable service provider occupied in offering ISI Certification Services, FMCS Consultancy, NABL Accreditation Consultancy, TEC Certification, BIS CRS Scheme for Electronics & IT Goods, WPC License.",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "55017"
+        }
+    }
+</script>
+
+
+<?php include('footer.php'); ?>
+<script>
+		    $(function() {
+              var popup = $('#mainpopup');
+              var time = $(".will-close strong");
+              var closeSeconds = $("#mainpopup").attr("data-close");
+              var openSeconds = $("#mainpopup").attr("data-open");
+              var dataSrc = $("#mainpopup").attr("data-href");
+              
+            
+              setTimeout(function(e) {
+                
+                popup.modal('show');
+                time.html(closeSeconds);
+                
+                // setInterval(function(){
+                //   time.html(closeSeconds);
+                //   closeSeconds--;
+                  
+                //   if(closeSeconds < 0){
+                //     popup.modal('hide');
+                //   }
+                  
+                // }, 1000)
+                
+              }, openSeconds * 1000);
+              
+                $.ajax({
+                url: dataSrc,
+                dataType: "html",
+                success: function(data) {
+                  $(".modal-body").html(data);
+                }
+              });
+              
+              
+            });
+		</script>
